@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Gastos</title>
+<meta name="description" content="Controle de gastos pessoais com Google Planilhas">
+<meta name="theme-color" content="#0f7b5f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { var t = localStorage.getItem('gx_tema'); t = t ? JSON.parse(t) : 'auto';
+    if (t !== 'auto') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <main id="app"></main>
+  <nav id="tabs"></nav>
+  <div id="modal"></div>
+  <div id="ask"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
